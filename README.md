@@ -1,1 +1,10 @@
-# Gevokizumab-7kg-dosage-group
+# Gevokizumab
+
+This repository contains a methodology to estimate population pharmacokinetic (PopPK) parameters, along with inter-individual variabilities, using only reported patients’ mean plasma concentrations and their standard deviations (SDs) versus time. A Bayesian solution is provided by utilizing virtual patients and using simulation to reconstruct the likelihood of the aggregate data. The method was assessed in R by its application to real data of a 7kg dosage froup of gevokizumab, a monoclonal antibody, (Cavelti-Weder et al., 2012) to estimate the drug’s PopPK parameters of a second generation minimal Physiologically-Based PK (mPBPK) model. Also, a mixed effects approach was used in RStan to allow accounting for the potential inter-group variability (IGV) among the real data of the five dosage-groups of gevokizumab. 
+It is noteworthy that the method could be applied not only to gevokizumab or monoclonal antibodies in general, but also to a variety of drugs and PK models. To highlight this, a theoretical IV administration of a drug, following a simple one-compartment model was also utilized. This template could be used as a guide when one analyst wishes to apply the proposed methodology to a drug of his/her interest with a more complicated PK model (2- or 3- compartment model), when only aggregate data is available (mean plasma concentrations and their SDs). 
+Developed by the Pharmacometrics group of the Department of Pharmacy of the National Kapodistrian University of Athens (NKUA). Contributors: Evangelos Karakitsios and Aris Dokoumetzidis, (c) 2024. 
+The repository consists of the following:
+
+1) As far as our fit for the 7kg dosage-group is concerned, the related RData file named "ONE_DOSE.RData" is provided. In addition, a “7kg dosage-group” R file is provided, where after loading the previous RData file the displayed commands can be executed
+2) Regarding the fit of all five dosage-groups, an R file named “FIVE_DOSES_FIT.R”, as well as a stan file, named “FIVE_DOSES_FIT”. The related RData file “FIVE_DOSES” is also provided.
+3) Concerning the simple template, two related files, an R file named “iv_bolus” and a Stan file named “iv_bolus”, are provided as well.
