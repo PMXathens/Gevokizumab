@@ -5,6 +5,6 @@ It is noteworthy that the method could be applied not only to gevokizumab or mon
 Developed by the Pharmacometrics group of the Department of Pharmacy of the National Kapodistrian University of Athens (NKUA). Contributors: Evangelos Karakitsios and Aris Dokoumetzidis, (c) 2024. 
 The repository consists of the following:
 
-1) As far as our fit for the 7 mg dosage-group is concerned, the related RData file named "ONE_DOSE.RData" is provided. In addition, a “7kg dosage-group” R file is provided, where after loading the previous RData file the displayed commands can be executed
+1) As far as our fit for the 7 mg dosage-group is concerned, the related RData file named "ONE_DOSE.RData" is provided. In addition, a “7 mg dosage-group” R file is provided, where after loading the previous RData file the displayed commands can be executed
 2) Regarding the fit of all five dosage-groups, an R file named “FIVE_DOSES_FIT.R”, as well as a stan file, named “FIVE_DOSES_FIT”. The related RData file “FIVE_DOSES” is also provided.
 3) Concerning the simple template, two related files, an R file named “iv_bolus” and a Stan file named “iv_bolus”, are provided as well.
